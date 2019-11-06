@@ -1,0 +1,56 @@
+.my-nav{
+  color:white !important;
+}
+.nav-white a{
+    color:white !important;
+}
+.navbar-brand{
+    color:green!important;
+    font-size:50px!important;
+}
+.nav-account{
+    color:white!important;
+}
+.menu-shopping{
+  background-color: black;
+  color: white;
+  height: 60px;
+  display:flex;
+}
+.icone{
+   font-size:30px;
+   width:5%;
+}
+.shoes {
+    width:100%;
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+}
+.Socks{
+    width:100%;
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+}
+.Sacados{
+    width:100%;
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+}
+button.btn.btn-success {
+    border-radius: 50%;
+    width:50px;
+    height:50px;
+}
+#Total{
+    font-size:30px;
+    align-items:center;
+}
+.fa-heart{
+    margin-left:10px;   
+}
+.fa-heart:hover {
+    cursor: pointer;
+}

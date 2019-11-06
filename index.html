@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="Style.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>Shopping Cart</title>
+</head>
+
+<body>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark my-nav">
+            <a class="navbar-brand" href="#">shopping Card</a>
+            <div class="collapse navbar-collapse " id="navbarNavDropdown">
+                <ul class="navbar-nav nav-white">
+                    <li class="nav-item1 active">
+                        <a class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item2">
+                        <a class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item3">
+                        <a class="nav-link">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+            <li class="nav-item dropdown nav-account">
+                <a class="nav-link dropdown-toggle nav-drop" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Account
+                </a>
+                <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+                    <ul>
+                        <li><a class="dropdown-item">Profile</a></li>
+                        <li><a class="dropdown-item">Setting</a></li>
+                        <li><a class="dropdown-item">Logout</a></li>
+                    </ul>
+                </div>
+            </li>
+        </nav>
+
+    </header>
+    <section>
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="./photo/1.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./photo/ph2.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./photo/ph5.jpg" alt="Third slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./photo/ph4.jpg" alt="Third slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+    <section>
+        <div>
+            <div class="menu-shopping">
+                <div class="icone">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <h2>Shooping bag Total :</h2>
+                <div class="col-2">
+                    <span id="Total">220</span>
+                    <span>$</span>
+                </div>
+            </div>
+            <div class="shoes" id="shoes-row">
+                <div class="btn-delete col-2">
+                    <button type="button" class="btn btn-xs" id="delete-shoes">X</button>
+                    <i class="fas fa-heart" id="love-shoes"></i>
+                </div>
+                <div class="col-2">
+                    <img src="./photo/th.jpg">
+                </div>
+                <div class="col-2">
+                    <h3> Shoe black </h3>
+                </div>
+                <div class="col-2">
+                    <button type="button" class="btn btn-success" id="addshoes">+</button>
+                    <span id="shoesQuantity">1</span>
+                    <button type="button" class="btn btn-success" id="subshoes">-</button>
+                </div>
+                <div class="col-2">
+                    <span id="priceshoes1">120</span>
+                    <span>$</span>
+                </div>
+            </div>
+            <div class="Socks" id="socks-row">
+                <div class="btn-delete col-2">
+                    <button type="button" class="btn btn-xs" id="delete-socks">X</button>
+                    <i class="fas fa-heart" id="love-socks"></i>
+                </div>
+                <div class="col-2">
+                    <img src="./photo/th (2).jpg">
+                </div>
+                <div class="col-2">
+                    <h4> Socks White </h4>
+                </div>
+                <div class="col-2">
+                    <button type="button" class="btn btn-success" id="addsocks">+</button>
+                    <span id="socksQuantity">1</span>
+                    <button type="button" class="btn btn-success" id="subsocks">-</button>
+                </div>
+                <div class="col-2">
+                    <span id="pricesocks1">20</span>
+                    <span>$</span>
+                </div>
+            </div>
+            <div class="Sacados" id="sacados-row">
+                <div class="btn-delete col-2">
+                    <button type="button" class="btn btn-xs" id="delete-sacados">X</button>
+                    <i class="fas fa-heart" id="love-sacados"></i>
+                </div>
+                <div class="col-2">
+                    <img src="./photo/th (3).jpg">
+                </div>
+                <div class="col-2">
+                    <h4> Sac a dos Black </h4>
+                </div>
+                <div class="col-2">
+                    <button type="button" class="btn btn-success" id="addsacados">+</button>
+                    <span id="sacadosQuantity">1</span>
+                    <button type="button" class="btn btn-success" id="subsacados">-</button>
+                </div>
+                <div class="col-2">
+                    <span id="pricesacados1">80</span>
+                    <span>$</span>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+<script src="shopping.JS"></script>
+
+</html>
